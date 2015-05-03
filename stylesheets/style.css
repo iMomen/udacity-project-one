@@ -1,0 +1,87 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+@import url('normalize.css');
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+/* Header */
+header {
+    margin: 15px 0;
+    display: flex;
+}
+.tagline {
+    margin-top: 30px;
+    margin-left: auto;
+}
+
+.tagline .site-name {
+    color: #191919;
+    font-size: 36px;
+}
+
+.tagline .site-slogan {
+    color: #646464;
+    font-size: 18px;
+    font-weight: 200;
+    text-align: right;
+}
+
+/* Main Content */
+.about,
+.projects {
+    margin: 15px 0;
+}
+.section--header {
+    margin: 10px 0;
+    color: #646464;
+    text-transform: uppercase;
+}
+
+/* Main Content >> Projects */
+.projects {
+    border-top: 1px solid rgb(239, 239, 239);
+    border-bottom: none;
+    margin-top: 30px;
+}
+.project .project-title {
+    margin: 10px 0 5px;
+    color:#191919;
+    font-size: 21px;
+}
+.project p {
+    font-size: 13px;
+    color:#646464;
+}
+
+/* Footer */
+footer {
+    margin-top: 10px;
+    border-top: 1px solid rgb(239, 239, 239);
+    padding: 10px 0;
+    color: #B6B6B6;
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        display: block;
+    }
+    .brand,
+    .tagline,
+    .tagline .site-slogan {
+        text-align: center;
+    }
+    .tagline {
+        margin-top: 10px;
+    }
+}
